@@ -11,12 +11,13 @@ explr_main_file='results/teamf_exploration/mainpage_conn_tests'
 > ${explr_main_file}
 
 thrd_num=8
+duration=30
 for ((i=8; i<=1024; i*=2)); do
 	echo "testing ${i} connections"
-	echo "${i}	$(wrk -t${thrd_num} -c${i} -d10s http://ryan.dse.in.tum.de:8094/swissknife-Teamf/ | grep 'Requests/sec')" >> ${basic_rest_file}
-	echo "${i}	$(wrk -t${thrd_num} -c${i} -d10s http://ryan.dse.in.tum.de:8094/ | grep 'Requests/sec')" >> ${basic_main_file}
-	echo "${i}	$(wrk -t${thrd_num} -c${i} -d10s http://ryan.dse.in.tum.de:8096/swissknife-Teamf/ | grep 'Requests/sec')" >> ${explr_rest_file}
-	echo "${i}	$(wrk -t${thrd_num} -c${i} -d10s http://ryan.dse.in.tum.de:8096/ | grep 'Requests/sec')" >> ${explr_main_file}
+	echo "${i}	$(wrk -t${thrd_num} -c${i} -d${duration}s http://ryan.dse.in.tum.de:8094/swissknife-Teamf/ | grep 'Requests/sec')" >> ${basic_rest_file}
+	echo "${i}	$(wrk -t${thrd_num} -c${i} -d${duration}s http://ryan.dse.in.tum.de:8094/ | grep 'Requests/sec')" >> ${basic_main_file}
+	echo "${i}	$(wrk -t${thrd_num} -c${i} -d${duration}s http://ryan.dse.in.tum.de:8096/swissknife-Teamf/ | grep 'Requests/sec')" >> ${explr_rest_file}
+	echo "${i}	$(wrk -t${thrd_num} -c${i} -d${duration}s http://ryan.dse.in.tum.de:8096/ | grep 'Requests/sec')" >> ${explr_main_file}
 done
 
 python3 plot_conn_from_wrk.py -p results/teamf_basic -n ${thrd_num}
