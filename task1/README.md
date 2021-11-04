@@ -1,4 +1,4 @@
-# swiss-knife Team-F
+# Swiss-knife Team-F
 ## Group Members:
 1- Wenli Gao
 2- Asim Sabir
@@ -18,3 +18,10 @@ There are total of 4 .sh files to be run as few tasks could not be done automati
   <li>Manual step: delete all the un-necessary plugins except WordPress Importer and WordPres RESTApi Authentication and goto add new plugins and install and activate w3 total cache plugin. For its configuration, go to w3 cache settings>accept and hit next>test page cache>select disk:basic and hit next>test database cache>select disk and hit next>test object cache>select disk and hit next>test browser cache>select enable and hit next>mark lazy loads and hit next</li>
   <li>Run script 4 with command ./script4.sh (IT TAKES TIME). All the plots for benchmarks as well as the plot for system profile will be created in results directory</li>
 </ol>
+## Plots
+### Basic task
+![](./results/RPS_conn_basic.png)
+
+### Full-system profiling
+### Exploration task
+
