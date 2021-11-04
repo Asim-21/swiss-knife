@@ -46,8 +46,9 @@ Deployment for this task is same as the basic task. For the optimization of the 
 <li>test database cache: Many database queries are made in every dynamic page request. A database cache may speed up the generation of dynamic pages. Database Cache serves query results direct-ly from a storage engine.
 <li>test object cache: WordPress caches objects used to build pages but does not reuse them for future page requests.
 <li>test browser cache: To render a website, browsers must download many different types of assets, in-cluding javascript files, CSS stylesheets, images, and more. For most assets, once a browser has downloaded them, they shouldn't have to down-load them again.
-<li>lazy loads: Images can be loaded when a visitor scrolls down the page to make them visible.<ol>
+<li>lazy loads: Images can be loaded when a visitor scrolls down the page to make them visible.</ol>
 
+ 
 
 ### Exploration task - Plots
 
