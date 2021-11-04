@@ -18,6 +18,7 @@ There are total of 4 .sh files to be run as few tasks could not be done automati
   <li>Manual step: delete all the un-necessary plugins except WordPress Importer and WordPres RESTApi Authentication and goto add new plugins and install and activate w3 total cache plugin. For its configuration, go to w3 cache settings>accept and hit next>test page cache>select disk:basic and hit next>test database cache>select disk and hit next>test object cache>select disk and hit next>test browser cache>select enable and hit next>mark lazy loads and hit next</li>
   <li>Run script 4 with command ./script4.sh (IT TAKES TIME). All the plots for benchmarks as well as the plot for system profile will be created in results directory</li>
 </ol>
+
 ## Plots
 
 ### Basic task
@@ -25,12 +26,17 @@ There are total of 4 .sh files to be run as few tasks could not be done automati
 ![image](https://user-images.githubusercontent.com/76809539/140429771-7743ba31-c406-40c3-9006-1a5182372159.png)
 ![image](https://user-images.githubusercontent.com/76809539/140429791-f60c825d-af61-4915-b366-40d27186a494.png)
 
+We can observe from the first 2 graphs, that the page creat-ed with RestAPI is performing better in terms of RPS against number of threads and number of connects. The one reason for this we see is RestAPI is 4.5kb in size and the main page is 7.5kb in size.
 
 ### Full-system profiling
 
 ![image](https://user-images.githubusercontent.com/76809539/140430023-80bc208e-fd10-433e-af2a-0dbb4a5e0f2f.png)
 
+For system profiling, we used PERF to generate Flamegraph. It can been seen that almost half of the system calls are invoked by swap, so we suspect i/o might be the bottleneck of the system.
+
+
 ### Exploration task
 ![image](https://user-images.githubusercontent.com/76809539/140429843-65412290-dcf3-4426-8489-e42e0e845351.png)
 ![image](https://user-images.githubusercontent.com/76809539/140429860-ffae9c59-9f8d-4003-aa4e-2b87c3c0a768.png)
 
+The graphs show that with the optimization, the RPS is in-creased to a large number by running the same http bench-mark test using the same parameters. However, the main page seems to be performing better than RestAPI page that is because of wp caching and using mysql8.0 instead of mysql.
