@@ -19,6 +19,7 @@ There are total of 4 .sh files to be run as few tasks could not be done automati
   <li>Run script 4 with command ./script4.sh (IT TAKES TIME). All the plots for benchmarks as well as the plot for system profile will be created in results directory</li>
 </ol>
 ## Plots
+
 ### Basic task
 
 ![image](https://user-images.githubusercontent.com/76809539/140429771-7743ba31-c406-40c3-9006-1a5182372159.png)
@@ -26,6 +27,8 @@ There are total of 4 .sh files to be run as few tasks could not be done automati
 
 
 ### Full-system profiling
+
+![image](https://user-images.githubusercontent.com/76809539/140430023-80bc208e-fd10-433e-af2a-0dbb4a5e0f2f.png)
 
 ### Exploration task
 ![image](https://user-images.githubusercontent.com/76809539/140429843-65412290-dcf3-4426-8489-e42e0e845351.png)
