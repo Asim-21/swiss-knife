@@ -20,6 +20,7 @@ There are total of 4 .sh files to be run as few tasks could not be done automati
 </ol>
 ## Plots
 ### Basic task
+
 ![image](https://user-images.githubusercontent.com/76809539/140429771-7743ba31-c406-40c3-9006-1a5182372159.png)
 ![image](https://user-images.githubusercontent.com/76809539/140429791-f60c825d-af61-4915-b366-40d27186a494.png)
 
