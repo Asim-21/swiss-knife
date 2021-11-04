@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 d = dict()
 
-for connection in range(20,201,20):
+for connection in range(20,141,20):
   filename = "mainpage_tests/connection_" + str(connection)
   with open(filename) as f:
     content = f.read().splitlines()
@@ -17,7 +17,7 @@ for connection in range(20,201,20):
 df_conn = pd.DataFrame(data=d, index=['RPS']).T
 
 p = dict()
-for connection in range(20,201,20):
+for connection in range(20,141,20):
   filename = "restapi_tests/connection_" + str(connection)
   with open(filename) as f:
     content = f.read().splitlines()
