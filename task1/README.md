@@ -41,6 +41,13 @@ For system profiling, we used PERF to generate Flamegraph. It can been seen that
 ## Exploration Task Experimental setup and methodology
 
 Deployment for this task is same as the basic task. For the optimization of the blog, we used caching in WordPress, changed the db to mysql:latest and some changing in php.ini. mysql:latest is mysql8.0 which has better perfor-mance as compared to mysql5.7[]. We achieved caching by installing a plug-in named w3 total cache[4] through wp dashboard. W3 Total Cache provides many options to help your website perform faster. While the ideal settings vary for every website, there are a few settings recommended that we enabled.
+<ol>
+<li>Test page cache: The time it takes between a visi-tor's browser page request and receiving the first byte of a response is referred to as Time to First Byte.
+<li>test database cache: Many database queries are made in every dynamic page request. A database cache may speed up the generation of dynamic pages. Database Cache serves query results direct-ly from a storage engine.
+<li>test object cache: WordPress caches objects used to build pages but does not reuse them for future page requests.
+<li>test browser cache: To render a website, browsers must download many different types of assets, in-cluding javascript files, CSS stylesheets, images, and more. For most assets, once a browser has downloaded them, they shouldn't have to down-load them again.
+<li>lazy loads: Images can be loaded when a visitor scrolls down the page to make them visible.<ol>
+
 
 ### Exploration task - Plots
 
