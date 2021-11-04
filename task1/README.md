@@ -5,7 +5,12 @@
 3- Adrian Montoya
 ## Pre-requisite
 Docker, Docker-compose, cURL
-## Steps for deployment
+
+## Basic-Task Experimental setup and methodology:
+
+For deployment of the containers, we have used the docker-compose tool. Docker Compose lets you specify services in a multi-container application using a declarative para-digm[1][2]. In our case, we deployed 3 containers using imag-es wordpress:latest, nginx:alpine and mysql:5.7. The reason for using nginx mysql:5.7 is because both are light-weight. We have used RestAPI from the CLI by running curl POST command to create a page named SwissKnife-Teamf. We have tried to automate the process as much as possible but some tasks like installing and activating plugins on Word-Press were only possible through WP dashboard. For HTTP benchmarking, we used wrk[3] benchmarking tool that is easy to use, written in C/Lua and very friendly with dockers. For full system profiling, we used Linux perf and the FlameGraph tool. Results for HTTP benchmarking and perf can be seen in Plots section below.
+
+## Steps for deployment (for both)
 There are total of 4 .sh files to be run as few tasks could not be done automatically i.e. installing and activating plugins to wordpress
 <ol>
   <li>Clone github respository</li>
@@ -19,9 +24,8 @@ There are total of 4 .sh files to be run as few tasks could not be done automati
   <li>Run script 4 with command ./script4.sh (IT TAKES TIME). All the plots for benchmarks as well as the plot for system profile will be created in results directory</li>
 </ol>
 
-## Plots
+## Basic task - Plots
 
-### Basic task
 
 ![image](https://user-images.githubusercontent.com/76809539/140429771-7743ba31-c406-40c3-9006-1a5182372159.png)
 ![image](https://user-images.githubusercontent.com/76809539/140429791-f60c825d-af61-4915-b366-40d27186a494.png)
@@ -34,8 +38,12 @@ We can observe from the first 2 graphs, that the page creat-ed with RestAPI is p
 
 For system profiling, we used PERF to generate Flamegraph. It can been seen that almost half of the system calls are invoked by swap, so we suspect i/o might be the bottleneck of the system.
 
+## Exploration Task Experimental setup and methodology
 
-### Exploration task
+Deployment for this task is same as the basic task. For the optimization of the blog, we used caching in WordPress, changed the db to mysql:latest and some changing in php.ini. mysql:latest is mysql8.0 which has better perfor-mance as compared to mysql5.7[]. We achieved caching by installing a plug-in named w3 total cache[4] through wp dashboard. W3 Total Cache provides many options to help your website perform faster. While the ideal settings vary for every website, there are a few settings recommended that we enabled.
+
+### Exploration task - Plots
+
 ![image](https://user-images.githubusercontent.com/76809539/140429843-65412290-dcf3-4426-8489-e42e0e845351.png)
 ![image](https://user-images.githubusercontent.com/76809539/140429860-ffae9c59-9f8d-4003-aa4e-2b87c3c0a768.png)
 
