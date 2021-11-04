@@ -20,8 +20,13 @@ There are total of 4 .sh files to be run as few tasks could not be done automati
 </ol>
 ## Plots
 ### Basic task
-![](./results/RPS_conn_basic.png)
+![image](https://user-images.githubusercontent.com/76809539/140429771-7743ba31-c406-40c3-9006-1a5182372159.png)
+![image](https://user-images.githubusercontent.com/76809539/140429791-f60c825d-af61-4915-b366-40d27186a494.png)
+
 
 ### Full-system profiling
+
 ### Exploration task
+![image](https://user-images.githubusercontent.com/76809539/140429843-65412290-dcf3-4426-8489-e42e0e845351.png)
+![image](https://user-images.githubusercontent.com/76809539/140429860-ffae9c59-9f8d-4003-aa4e-2b87c3c0a768.png)
 
