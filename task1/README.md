@@ -10,7 +10,7 @@ Docker, Docker-compose, cURL
 
 For deployment of the containers, we have used the docker-compose tool. Docker Compose lets you specify services in a multi-container application using a declarative para-digm[1][2]. In our case, we deployed 3 containers using imag-es wordpress:latest, nginx:alpine and mysql:5.7. The reason for using nginx mysql:5.7 is because both are light-weight. We have used RestAPI from the CLI by running curl POST command to create a page named SwissKnife-Teamf. We have tried to automate the process as much as possible but some tasks like installing and activating plugins on Word-Press were only possible through WP dashboard. For HTTP benchmarking, we used wrk[3] benchmarking tool that is easy to use, written in C/Lua and very friendly with dockers. For full system profiling, we used Linux perf and the FlameGraph tool. Results for HTTP benchmarking and perf can be seen in Plots section below.
 
-## Steps for deployment (for both)
+## Steps for deployment (for both tasks and should be done on the server provided i.e. ryan.dse.in.tum.de) 
 There are total of 4 .sh files to be run as few tasks could not be done automatically i.e. installing and activating plugins to wordpress
 <ol>
   <li>Clone github respository</li>
