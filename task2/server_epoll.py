@@ -1,7 +1,14 @@
 import socket, select
+from optparse import OptionParser
 
-host = '0.0.0.0'
-port = 9006
+parser = OptionParser()
+parser.add_option("-p", "--port", type="int", dest="port", default=9666, help="port")
+
+(options, args) = parser.parse_args()
+
+host = 'fe80::e63d:1aff:fe72:f0%swissknife0'
+port = options.port
+print(port)
  
 EOL1 = b'\n\n'
 EOL2 = b'\n\r\n'
@@ -9,10 +16,10 @@ response  = b'HTTP/1.0 200 OK\r\nDate: Mon, 1 Jan 1996 01:01:01 GMT\r\n'
 response += b'Content-Type: text/plain\r\nContent-Length: 13\r\n\r\n'
 response += b'Hello, world!'
  
-serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+serversocket = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-serversocket.bind((host, port))
-serversocket.listen(1)
+serversocket.bind((host, port, 0, 4))
+serversocket.listen(10)
 
 serversocket.setblocking(0)
 serversocket.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
