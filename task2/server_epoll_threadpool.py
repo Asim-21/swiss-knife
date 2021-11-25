@@ -59,22 +59,13 @@ try:
     connections = {}
     requests = {}
     responses = {}
-#    executor = ThreadPoolExecutor(max_worker)
     while True:
         threads = list()
-        events = epoll.poll(max_worker)
+        events = epoll.poll(maxevents=max_worker)
         for fileno, event in events:
             with ThreadPoolExecutor(max_worker) as executor:
                 executor.submit(thread_function, fileno, event)
-        """
-            x = threading.Thread(target=thread_function, args=(fileno, event))
-            threads.append(x)
-            x.start()
-        for index, thread in enumerate(threads):
-            thread.join()
-        """
 finally:
     epoll.unregister(server_fd)
     epoll.close()
-#    executor.shutdown()
     sock.close()

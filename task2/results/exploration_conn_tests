@@ -1,0 +1,8 @@
+8	Requests/sec:    485.90
+16	Requests/sec:    521.09
+32	Requests/sec:    521.33
+64	Requests/sec:    540.29
+128	Requests/sec:    500.46
+256	Requests/sec:    435.74
+512	Requests/sec:    311.56
+1024	Requests/sec:    273.77
