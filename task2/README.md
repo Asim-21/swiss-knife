@@ -18,6 +18,8 @@
   
 ![image](https://user-images.githubusercontent.com/76809539/143503876-a84aeeda-8f22-4823-928a-b92481c084d4.png)
   
+In the flamegraph, almost half of the system calls invoked are accept4. The reason might be that we only implement a http server with basic functions,  no complex processes are required.
+  
 ## Exploration Task
 ### Experimental setup and methodology:
 
@@ -44,6 +46,8 @@
 ### Flamegraph
   
 ![image](https://user-images.githubusercontent.com/76809539/143504314-d392d812-613a-418b-9f8e-8081ce408637.png)
+  
+In the flamegraph for the exploration system, the system call ret_from_fork takes the domination part. It implies frequent thread switching. It’s no doubt the exploration system doesn’t perform well then.
 
 ## Comparison Plot of Basic server and Improved Server
 
