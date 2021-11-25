@@ -5,12 +5,12 @@
 
 ## Steps for deployment:
 <ol>
-<li>Make sure you have 3 ssh session opened. one for basic server, 2nd for epoll server and 3rd for scripts
-<li>Run python3 basic_server.py on session 1
-<li>Run python3 server_epoll_thread.py on session 2
-<li>On session 3, 
-  
-  
+<li>Make sure you have 3 ssh sessions opened. One for basic server, 2nd for epoll server and 3rd for scripts
+<li>Run "python3 basic_server.py > basic_server.log" on session 1
+<li>Run "python3 server_epoll_thread.py > server_epoll_thread.log" on session 2
+<li>On session 3, run script1.sh (WARNING! IT TAKES TIME). The plot for benchmarks as well as the plots for profiling will be created in results directory
+<li>In case of port conflicts, you can specify the port by option '-p' or '--port', eg. "python3 basic_server.py -p 1234 > basic_server.log". But you need to update the port in script1.sh correspondingly as well.
+</ol>
   
 ## Basic Task
 ### Description
