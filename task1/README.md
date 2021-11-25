@@ -1,8 +1,3 @@
-# Swiss-knife Team-F
-## Group Members:
-1- Wenli Gao
-2- Asim Sabir
-3- Adrian Montoya
 ## Pre-requisite
 Docker, Docker-compose, cURL
 
