@@ -3,6 +3,15 @@
 ## Abstract
 <p align="justify">A key to understanding a variety of issues happening when running a Linux system is to learn and analyze how the Linux I/O subsystem works. I/O multiplexing is one of the commonly used I/O subsystem tools which is a polling-based kernel mechanism for the I/O in Linux. There are 3 types of I/O multiplexing used in Linux: select, poll and epoll. This report starts with the basic task which aims to-wards creating a server-client communication model on a local server. A client simply sends requests to a http server and receives responses from it. Later, in the exploration task, the http server is improved by using one of the I/O multiplexing techniques. A benchmarking tool has been used as a client to send requests to a basic server and an improved server to measure their performance, ie. RPS (re-quest per second). Using the results of the benchmarking tool, a comparison in performances (w.r.t different parame-ters) between the two servers has been plotted.
 
+## Steps for deployment:
+<ol>
+<li>Make sure you have 3 ssh session opened. one for basic server, 2nd for epoll server and 3rd for scripts
+<li>Run python3 basic_server.py on session 1
+<li>Run python3 server_epoll_thread.py on session 2
+<li>On session 3, 
+  
+  
+  
 ## Basic Task
 ### Description
 <p align="justify"> In the basic task, a very simple http server has been de-ployed on the local server. The communication in this serv-er-client model is done by using 2 different network inter-faces on a local server. wrk has been used for performance evaluation as the client. wrk is a modern HTTP benchmark-ing tool, written in C/Lua, capable of generating significant load when run on a single multi-core CPU. It combines a multithreaded design with scalable event notification sys-tems such as epoll and kqueue.
