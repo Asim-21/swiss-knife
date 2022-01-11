@@ -1,0 +1,105 @@
+#####
+y - Run 1
+2022-01-06 10:31:37
+#####
+
+#  ./fs_mark  -d  scratch  -L  20  -s  1048576  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Thu Jan  6 10:31:13 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+     6         1000      1048576        939.4             5816
+     7         2000      1048576        973.6             5745
+     8         3000      1048576       1021.2             5939
+     9         4000      1048576        991.1             5935
+    10         5000      1048576       1041.0             5778
+    11         6000      1048576       1043.8             5976
+    12         7000      1048576       1044.4             5966
+    13         8000      1048576       1047.9             5947
+    14         9000      1048576       1028.1             6014
+    16        10000      1048576        985.4             5844
+    17        11000      1048576       1011.6             5790
+    18        12000      1048576        987.3             5875
+    19        13000      1048576       1019.4             5872
+    20        14000      1048576        982.4             5965
+    21        15000      1048576        973.0             5791
+    22        16000      1048576        969.3             5794
+    23        17000      1048576       1010.4             5822
+    24        18000      1048576        963.8             5800
+    25        19000      1048576       1037.2             5871
+    26        20000      1048576       1053.5             5873
+
+#####
+y - Run 2
+2022-01-06 10:32:04
+#####
+
+#  ./fs_mark  -d  scratch  -L  20  -s  1048576  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Thu Jan  6 10:31:39 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+     6         1000      1048576        967.2             5782
+     7         2000      1048576       1010.9             5958
+     8         3000      1048576        981.2             5822
+     9         4000      1048576        985.3             5773
+    10         5000      1048576        981.0             5889
+    11         6000      1048576       1034.3             5818
+    12         7000      1048576        943.2             6758
+    13         8000      1048576        934.0             5960
+    14         9000      1048576        964.4             5856
+    16        10000      1048576        966.6             5930
+    17        11000      1048576        949.1             5744
+    18        12000      1048576       1009.7             5877
+    19        13000      1048576       1018.1             5742
+    20        14000      1048576        966.1             5715
+    21        15000      1048576        978.2             5960
+    22        16000      1048576        985.0             5751
+    23        17000      1048576       1054.3             5829
+    24        18000      1048576       1042.5             5858
+    25        19000      1048576        953.5             5796
+    26        20000      1048576        945.9             5910
+
+#####
+y - Run 3
+2022-01-06 10:33:09
+#####
+
+#  ./fs_mark  -d  scratch  -L  20  -s  1048576  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Thu Jan  6 10:32:06 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+     6         1000      1048576        975.8             6049
+     7         2000      1048576        993.5             5867
+     8         3000      1048576        982.1             6134
+     9         4000      1048576        975.4             6488
+    10         5000      1048576        964.4             5957
+    11         6000      1048576        912.3             6070
+    12         7000      1048576         31.3             6735
+    13         8000      1048576         91.0             6173
+    14         9000      1048576        980.8             6034
+    16        10000      1048576       1025.5             5913
+    17        11000      1048576        989.6             5901
+    18        12000      1048576        975.4             5838
+    19        13000      1048576        962.5             5863
+    20        14000      1048576       1031.5             5853
+    21        15000      1048576       1024.7             5924
+    22        16000      1048576       1056.5             5892
+    23        17000      1048576       1036.0             6176
+    24        18000      1048576       1044.0             6144
+    25        19000      1048576       1058.8             5741
+    26        20000      1048576       1059.3             5951
+

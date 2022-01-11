@@ -1,0 +1,276 @@
+#####
+y - Run 1
+2022-01-06 10:08:17
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=768424: Thu Jan  6 10:08:15 2022
+  read: IOPS=171k, BW=669MiB/s (701MB/s)(13.1GiB/20001msec)
+   bw (  KiB/s): min=678656, max=705208, per=100.00%, avg=685080.85, stdev=5724.98, samples=40
+   iops        : min=169664, max=176302, avg=171270.20, stdev=1431.22, samples=40
+  cpu          : usr=13.39%, sys=86.59%, ctx=30, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3425230,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=669MiB/s (701MB/s), 669MiB/s-669MiB/s (701MB/s-701MB/s), io=13.1GiB (14.0GB), run=20001-20001msec
+
+#####
+y - Run 2
+2022-01-06 10:08:52
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=841891: Thu Jan  6 10:08:50 2022
+  read: IOPS=164k, BW=641MiB/s (672MB/s)(12.5GiB/20001msec)
+   bw (  KiB/s): min=642592, max=863382, per=100.00%, avg=656624.05, stdev=47736.22, samples=40
+   iops        : min=160648, max=215845, avg=164156.03, stdev=11933.99, samples=40
+  cpu          : usr=12.55%, sys=87.44%, ctx=16, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3282692,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=641MiB/s (672MB/s), 641MiB/s-641MiB/s (672MB/s-672MB/s), io=12.5GiB (13.4GB), run=20001-20001msec
+
+#####
+y - Run 3
+2022-01-06 10:09:28
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=915424: Thu Jan  6 10:09:26 2022
+  read: IOPS=175k, BW=683MiB/s (716MB/s)(13.3GiB/20001msec)
+   bw (  KiB/s): min=637192, max=863152, per=100.00%, avg=699300.07, stdev=89675.19, samples=40
+   iops        : min=159298, max=215788, avg=174825.00, stdev=22418.80, samples=40
+  cpu          : usr=14.00%, sys=85.99%, ctx=19, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3496181,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=683MiB/s (716MB/s), 683MiB/s-683MiB/s (716MB/s-716MB/s), io=13.3GiB (14.3GB), run=20001-20001msec
+
+#####
+y - Run 4
+2022-01-06 10:10:03
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=988690: Thu Jan  6 10:10:01 2022
+  read: IOPS=166k, BW=650MiB/s (682MB/s)(12.7GiB/20001msec)
+   bw (  KiB/s): min=660232, max=669584, per=100.00%, avg=665902.35, stdev=1989.51, samples=40
+   iops        : min=165058, max=167396, avg=166475.60, stdev=497.31, samples=40
+  cpu          : usr=12.08%, sys=87.91%, ctx=14, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3329179,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=650MiB/s (682MB/s), 650MiB/s-650MiB/s (682MB/s-682MB/s), io=12.7GiB (13.6GB), run=20001-20001msec
+
+#####
+y - Run 5
+2022-01-06 10:10:39
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1062424: Thu Jan  6 10:10:37 2022
+  read: IOPS=182k, BW=712MiB/s (747MB/s)(13.9GiB/20001msec)
+   bw (  KiB/s): min=649688, max=787272, per=100.00%, avg=729408.75, stdev=59847.65, samples=40
+   iops        : min=162422, max=196818, avg=182352.23, stdev=14961.84, samples=40
+  cpu          : usr=14.46%, sys=85.53%, ctx=22, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3646745,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=712MiB/s (747MB/s), 712MiB/s-712MiB/s (747MB/s-747MB/s), io=13.9GiB (14.9GB), run=20001-20001msec
+
+#####
+y - Run 6
+2022-01-06 10:11:14
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1135329: Thu Jan  6 10:11:12 2022
+  read: IOPS=157k, BW=615MiB/s (645MB/s)(12.0GiB/20001msec)
+   bw (  KiB/s): min=617776, max=821360, per=100.00%, avg=629521.28, stdev=31438.15, samples=40
+   iops        : min=154444, max=205340, avg=157380.30, stdev=7859.54, samples=40
+  cpu          : usr=11.57%, sys=88.42%, ctx=30, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3147369,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=615MiB/s (645MB/s), 615MiB/s-615MiB/s (645MB/s-645MB/s), io=12.0GiB (12.9GB), run=20001-20001msec
+
+#####
+y - Run 7
+2022-01-06 10:11:50
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1208626: Thu Jan  6 10:11:48 2022
+  read: IOPS=215k, BW=839MiB/s (880MB/s)(16.4GiB/20001msec)
+   bw (  KiB/s): min=854544, max=863294, per=100.00%, avg=859459.25, stdev=2236.14, samples=40
+   iops        : min=213636, max=215823, avg=214864.80, stdev=559.03, samples=40
+  cpu          : usr=17.27%, sys=82.72%, ctx=18, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=4297044,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=839MiB/s (880MB/s), 839MiB/s-839MiB/s (880MB/s-880MB/s), io=16.4GiB (17.6GB), run=20001-20001msec
+
+#####
+y - Run 8
+2022-01-06 10:12:26
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1281338: Thu Jan  6 10:12:24 2022
+  read: IOPS=198k, BW=772MiB/s (810MB/s)(15.1GiB/20001msec)
+   bw (  KiB/s): min=637904, max=861160, per=100.00%, avg=790824.80, stdev=100331.94, samples=40
+   iops        : min=159476, max=215290, avg=197706.23, stdev=25082.89, samples=40
+  cpu          : usr=15.60%, sys=84.39%, ctx=23, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3953708,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=772MiB/s (810MB/s), 772MiB/s-772MiB/s (810MB/s-810MB/s), io=15.1GiB (16.2GB), run=20001-20001msec
+
+#####
+y - Run 9
+2022-01-06 10:13:01
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1354378: Thu Jan  6 10:12:59 2022
+  read: IOPS=160k, BW=626MiB/s (657MB/s)(12.2GiB/20001msec)
+   bw (  KiB/s): min=637448, max=651456, per=100.00%, avg=641499.53, stdev=3122.09, samples=40
+   iops        : min=159362, max=162864, avg=160374.85, stdev=780.51, samples=40
+  cpu          : usr=13.28%, sys=86.71%, ctx=15, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3207127,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=626MiB/s (657MB/s), 626MiB/s-626MiB/s (657MB/s-657MB/s), io=12.2GiB (13.1GB), run=20001-20001msec
+
+#####
+y - Run 10
+2022-01-06 10:13:37
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1427895: Thu Jan  6 10:13:35 2022
+  read: IOPS=213k, BW=834MiB/s (874MB/s)(16.3GiB/20001msec)
+   bw (  KiB/s): min=849112, max=856480, per=100.00%, avg=853672.82, stdev=1554.01, samples=40
+   iops        : min=212278, max=214120, avg=213418.20, stdev=388.50, samples=40
+  cpu          : usr=17.35%, sys=82.64%, ctx=13, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=4268016,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=834MiB/s (874MB/s), 834MiB/s-834MiB/s (874MB/s-874MB/s), io=16.3GiB (17.5GB), run=20001-20001msec
+
+#####
+y - Run 11
+2022-01-06 10:14:12
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1501073: Thu Jan  6 10:14:10 2022
+  read: IOPS=191k, BW=746MiB/s (782MB/s)(14.6GiB/20001msec)
+   bw (  KiB/s): min=751374, max=776776, per=100.00%, avg=763734.00, stdev=5767.16, samples=40
+   iops        : min=187843, max=194194, avg=190933.47, stdev=1441.80, samples=40
+  cpu          : usr=15.30%, sys=84.69%, ctx=28, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3818254,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=746MiB/s (782MB/s), 746MiB/s-746MiB/s (782MB/s-782MB/s), io=14.6GiB (15.6GB), run=20001-20001msec
+
+#####
+y - Run 12
+2022-01-06 10:14:46
+#####
+test: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1574211: Thu Jan  6 10:14:46 2022
+  read: IOPS=173k, BW=676MiB/s (709MB/s)(13.2GiB/20001msec)
+   bw (  KiB/s): min=637648, max=854888, per=100.00%, avg=692414.30, stdev=71751.24, samples=40
+   iops        : min=159412, max=213722, avg=173103.58, stdev=17937.81, samples=40
+  cpu          : usr=12.96%, sys=87.03%, ctx=30, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3461742,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=676MiB/s (709MB/s), 676MiB/s-676MiB/s (709MB/s-709MB/s), io=13.2GiB (14.2GB), run=20001-20001msec
+

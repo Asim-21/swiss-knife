@@ -1,0 +1,9 @@
+[Random Write]
+rw=write
+direct=1
+numjobs=4
+time_based
+runtime=30
+ioengine=libaio
+allow_mounted_write=1
+size=10GB

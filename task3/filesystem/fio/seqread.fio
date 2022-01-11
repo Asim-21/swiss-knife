@@ -1,0 +1,8 @@
+[Random Read]
+rw=read
+direct=1
+numjobs=4
+time_based
+runtime=30
+ioengine=libaio
+size=10GB

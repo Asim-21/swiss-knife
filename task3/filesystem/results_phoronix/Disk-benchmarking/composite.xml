@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.2.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>y</Title>
+    <LastModified>2022-01-05 19:10:59</LastModified>
+    <TestClient>Phoronix Test Suite v10.2.1 (Harstad)</TestClient>
+    <Description>y</Description>
+  </Generated>
+  <System>
+    <Identifier>y</Identifier>
+    <Hardware>Processor: AMD EPYC 7713P 64-Core @ 2.00GHz (64 Cores / 128 Threads), Motherboard: Dell 07PXPY (2.2.4 BIOS), Memory: 504GB, Disk: 4 x 1600GB Dell Ent NVMe AGN MU AIC 1.6TB + 600GB AL15SEB060NY, Graphics: mgag200drmfb</Hardware>
+    <Software>OS: Ubuntu 20.04.1 LTS, Kernel: 5.10.89 (x86_64), Display Driver: mgag200drmfb, Compiler: GCC 9.3.0, File-System: ext4, Screen Resolution: 1024x768, System Layer: Docker</Software>
+    <User>root</User>
+    <TimeStamp>2022-01-05 18:42:22</TimeStamp>
+    <TestClientVersion>10.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-targets=nvptx-none=\/build\/gcc-9-HskZEa\/gcc-9-9.3.0\/debian\/tmp-nvptx\/usr,hsa --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"none","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"acpi-cpufreq performance (Boost: Enabled)","cpu-microcode":"0xa00111d","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Full AMD retpoline IBPB: conditional IBRS_FW STIBP: always-on RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>randread libaio 0 1 2m</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>6845</Value>
+        <RawString>6801:6908:6827</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"31.41:31.43:31.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>randread libaio 0 1 2m</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>IOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>3419</Value>
+        <RawString>3397:3450:3410</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"31.41:31.43:31.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>randread libaio 0 1 4k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>846</Value>
+        <RawString>842:838:857</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"31.49:31.46:31.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>randread libaio 0 1 4k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory</Description>
+    <Scale>IOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>216667</Value>
+        <RawString>216000:214000:220000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"31.49:31.46:31.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>randwrite libaio 0 1 2m</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>2260</Value>
+        <RawString>2259:2262:2259</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"30.45:30.45:30.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>randwrite libaio 0 1 2m</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>IOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>1126</Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"30.45:30.45:30.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>randwrite libaio 0 1 4k</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>649</Value>
+        <RawString>651:648:648</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"30.37:30.36:30.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>randwrite libaio 0 1 4k</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory</Description>
+    <Scale>IOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>166333</Value>
+        <RawString>167000:166000:166000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"30.37:30.36:30.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>read libaio 0 1 2m</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>6810</Value>
+        <RawString>6847:6840:6744</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"31.41:31.44:31.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>read libaio 0 1 2m</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>IOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>3401</Value>
+        <RawString>3420:3416:3368</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"31.41:31.44:31.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>read libaio 0 1 4k</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>863</Value>
+        <RawString>861:863:866</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"31.49:31.46:31.49"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>read libaio 0 1 4k</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory</Description>
+    <Scale>IOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>221000</Value>
+        <RawString>220000:221000:222000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"31.49:31.46:31.49"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>write libaio 0 1 2m</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>2265</Value>
+        <RawString>2264:2264:2266</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"30.45:30.45:30.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>write libaio 0 1 2m</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>IOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>1129</Value>
+        <RawString>1128:1128:1130</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"30.45:30.45:30.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>write libaio 0 1 4k</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>648</Value>
+        <RawString>649:651:645</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"30.36:30.37:30.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.15.0</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.29</AppVersion>
+    <Arguments>write libaio 0 1 4k</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 4KB - Disk Target: Default Test Directory</Description>
+    <Scale>IOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>166000</Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -lnuma -lrt -lz -lpthread -lm -ldl -laio -std=gnu99 -ffast-math -include -O3 -fcommon -U_FORTIFY_SOURCE -march=native"},"test-run-times":"30.36:30.37:30.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.3</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-L 20 -s 1048576 -n 1000</Arguments>
+    <Description>Test: 1000 Files, 1MB Size</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>1047.5</Value>
+        <RawString>1056.9:1039:1046.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"21.14:21.28:21.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.3</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-L 5 -s 1048576 -n 5000 -t 4</Arguments>
+    <Description>Test: 5000 Files, 1MB Size, 4 Threads</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>2201.7</Value>
+        <RawString>2211.4:2192</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"53.72:54.08:54.00:54.22:54.11"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.3</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-L 10 -s 1048576 -n 4000 -D 32</Arguments>
+    <Description>Test: 4000 Files, 32 Sub Dirs, 1MB Size</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>y</Identifier>
+        <Value>1037.6</Value>
+        <RawString>1037:1040.8:1035</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"42.54:42.77:42.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

@@ -1,0 +1,11 @@
+[Random read write]
+rw=randrw
+direct=1
+numjobs=4
+time_based
+runtime=30
+ioengine=libaio
+allow_mounted_write=1
+rwmixread=60
+rwmixwrite=40
+size=10GB

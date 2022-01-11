@@ -1,0 +1,250 @@
+Operating system              Linux
+CPU                           x86_64
+Big endian                    no
+Compiler                      gcc
+Cross compile                 no
+
+Static build                  no
+Wordsize                      64
+zlib                          yes
+Linux AIO support             yes
+Linux AIO support rw flags    yes
+POSIX AIO support             yes
+POSIX AIO support needs -lrt  yes
+POSIX AIO fsync               yes
+POSIX pshared support         yes
+pthread_condattr_setclock()   yes
+pthread_sigmask()             yes
+pthread_getaffinity_np()      yes
+Solaris AIO support           no
+__sync_fetch_and_add          yes
+__sync_synchronize            yes
+__sync_val_compare_and_swap   yes
+libverbs                      yes
+rdmacm                        no
+librpma                       no
+libprotobuf_c                 no
+asprintf()                    yes
+vasprintf()                   yes
+Linux fallocate               yes
+POSIX fadvise                 yes
+POSIX fallocate               yes
+sched_setaffinity(3 arg)      yes
+sched_setaffinity(2 arg)      no
+clock_gettime                 yes
+CLOCK_MONOTONIC               yes
+clockid_t                     yes
+gettimeofday                  yes
+fdatasync                     yes
+pipe()                        yes
+pipe2()                       yes
+pread()                       yes
+sync_file_range               yes
+EXT4 move extent              yes
+Linux splice(2)               yes
+libnuma                       yes
+libnuma v2                    yes
+strsep                        yes
+strcasestr                    yes
+strlcat                       no
+getopt_long_only()            yes
+inet_aton                     yes
+socklen_t                     yes
+__thread                      yes
+RUSAGE_THREAD                 yes
+SCHED_IDLE                    yes
+TCP_NODELAY                   yes
+Net engine window_size        yes
+TCP_MAXSEG                    yes
+RLIMIT_MEMLOCK                yes
+pwritev/preadv                yes
+pwritev2/preadv2              yes
+IPv6 helpers                  yes
+http engine                   no
+Rados engine                  no
+Rados Block Device engine     no
+setvbuf                       yes
+Gluster API engine            no
+s390_z196_facilities          no
+HDFS engine                   no
+MTD                           yes
+libpmem                       no
+libpmem1_5                    no
+libpmemblk                    no
+PMDK pmemblk engine           no
+PMDK dev-dax engine           no
+PMDK libpmem engine           no
+DDN's Infinite Memory Engine  no
+iscsi engine                  no
+NBD engine                    no
+DAOS File System (dfs) Engine no
+NFS engine                    no
+lex/yacc for arithmetic       no
+getmntent                     yes
+getmntinfo                    no
+Static Assert                 yes
+bool                          yes
+strndup                       yes
+Valgrind headers              no
+Zoned block device support    yes
+Zoned block device capacity   no
+libzbc engine                 no
+march_armv8_a_crc_crypto      no
+cuda                          no
+libcufile                     no
+Build march=native            yes
+CUnit                         no
+__kernel_rwf_t                yes
+-Wimplicit-fallthrough=2      yes
+MADV_HUGEPAGE                 yes
+gettid                        yes
+statx(2)/libc                 yes
+statx(2)/syscall              yes
+Windows PDB generation        no
+timerfd_create                yes
+Lib-based ioengines dynamic   no
+TCMalloc support              no
+FIO_VERSION = fio-3.29
+    CC crc/crc16.o
+    CC crc/crc32.o
+    CC crc/crc32c-arm64.o
+    CC crc/crc32c-intel.o
+    CC crc/crc32c.o
+    CC crc/crc64.o
+    CC crc/crc7.o
+    CC crc/fnv.o
+    CC crc/md5.o
+    CC crc/murmur3.o
+    CC crc/sha1.o
+    CC crc/sha256.o
+    CC crc/sha3.o
+    CC crc/sha512.o
+    CC crc/test.o
+    CC crc/xxhash.o
+    CC lib/axmap.o
+    CC lib/bloom.o
+    CC lib/flist_sort.o
+    CC lib/gauss.o
+    CC lib/getrusage.o
+    CC lib/hweight.o
+    CC lib/ieee754.o
+    CC lib/lfsr.o
+    CC lib/memalign.o
+    CC lib/memcpy.o
+    CC lib/mountcheck.o
+    CC lib/num2str.o
+    CC lib/output_buffer.o
+    CC lib/pattern.o
+    CC lib/prio_tree.o
+    CC lib/rand.o
+    CC lib/rbtree.o
+    CC lib/strntol.o
+    CC lib/zipf.o
+    CC gettime.o
+    CC ioengines.o
+    CC init.o
+    CC stat.o
+    CC log.o
+    CC time.o
+    CC filesetup.o
+    CC eta.o
+    CC verify.o
+    CC memory.o
+    CC io_u.o
+    CC parse.o
+    CC fio_sem.o
+    CC rwlock.o
+    CC pshared.o
+    CC options.o
+    CC smalloc.o
+    CC filehash.o
+    CC profile.o
+    CC debug.o
+    CC engines/cpu.o
+    CC engines/mmap.o
+    CC engines/sync.o
+    CC engines/null.o
+    CC engines/net.o
+    CC engines/ftruncate.o
+    CC engines/filecreate.o
+    CC engines/filestat.o
+    CC engines/filedelete.o
+    CC engines/exec.o
+    CC server.o
+    CC client.o
+    CC iolog.o
+    CC backend.o
+    CC libfio.o
+    CC flow.o
+    CC cconv.o
+    CC gettime-thread.o
+    CC helpers.o
+    CC json.o
+    CC idletime.o
+    CC td_error.o
+    CC profiles/tiobench.o
+    CC profiles/act.o
+    CC io_u_queue.o
+    CC filelock.o
+    CC workqueue.o
+    CC rate-submit.o
+    CC optgroup.o
+    CC helper_thread.o
+    CC steadystate.o
+    CC zone-dist.o
+    CC zbd.o
+    CC dedupe.o
+    CC engines/posixaio.o
+    CC engines/falloc.o
+    CC engines/e4defrag.o
+    CC engines/splice.o
+    CC oslib/asprintf.o
+    CC oslib/strlcat.o
+    CC engines/mtd.o
+    CC oslib/libmtd.o
+    CC oslib/libmtd_legacy.o
+    CC diskutil.o
+    CC fifo.o
+    CC blktrace.o
+    CC cgroup.o
+    CC trim.o
+    CC engines/sg.o
+    CC oslib/linux-dev-lookup.o
+    CC engines/io_uring.o
+    CC oslib/linux-blkzoned.o
+    CC engines/cmdprio.o
+    CC engines/libaio.o
+    CC fio.o
+    CC t/log.o
+    CC t/genzipf.o
+    CC oslib/strcasestr.o
+    CC oslib/strndup.o
+    CC t/btrace2fio.o
+    CC t/dedupe.o
+    CC t/debug.o
+    CC t/arch.o
+    CC t/verify-state.o
+    CC t/stest.o
+    CC t/ieee754.o
+    CC t/axmap.o
+    CC t/lfsr-test.o
+    CC t/gen-rand.o
+    CC t/memlock.o
+    CC t/read-to-pipe-async.o
+    CC t/io_uring.o
+    CC t/fuzz/fuzz_parseini.o
+    CC t/fuzz/onefile.o
+  LINK t/ieee754
+  LINK t/memlock
+  LINK t/axmap
+  LINK t/gen-rand
+  LINK t/fio-genzipf
+  LINK t/fio-verify-state
+  LINK t/read-to-pipe-async
+  LINK t/fio-dedupe
+  LINK t/stest
+  LINK t/lfsr-test
+  LINK t/fio-btrace2fio
+  LINK t/io_uring
+  LINK fio
+  LINK t/fuzz/fuzz_parseini

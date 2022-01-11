@@ -1,0 +1,4 @@
+4k,    READ: bw=1650MiB/s (1730MB/s), 409MiB/s-417MiB/s (428MB/s-437MB/s), io=48.3GiB (51.9GB), run=30001-30001msec
+64k,    READ: bw=2154MiB/s (2259MB/s), 533MiB/s-545MiB/s (559MB/s-571MB/s), io=63.1GiB (67.8GB), run=30001-30001msec
+256k,    READ: bw=2283MiB/s (2394MB/s), 568MiB/s-575MiB/s (596MB/s-603MB/s), io=66.9GiB (71.8GB), run=30001-30001msec
+2m    READ: bw=2387MiB/s (2503MB/s), 595MiB/s-598MiB/s (624MB/s-627MB/s), io=69.9GiB (75.1GB), run=30004-30004msec

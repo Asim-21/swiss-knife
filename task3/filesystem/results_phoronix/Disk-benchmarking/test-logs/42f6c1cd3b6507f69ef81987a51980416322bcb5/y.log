@@ -1,0 +1,69 @@
+#####
+y - Run 1
+2022-01-05 18:47:09
+#####
+test: (g=0): rw=randwrite, bs=(R) 2048KiB-2048KiB, (W) 2048KiB-2048KiB, (T) 2048KiB-2048KiB, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=972771: Wed Jan  5 18:47:07 2022
+  write: IOPS=1126, BW=2259MiB/s (2368MB/s)(44.2GiB/20039msec); 0 zone resets
+   bw (  MiB/s): min= 2164, max= 2344, per=99.92%, avg=2256.94, stdev=43.05, samples=40
+   iops        : min= 1082, max= 1172, avg=1128.45, stdev=21.51, samples=40
+  cpu          : usr=3.40%, sys=6.16%, ctx=19590, majf=0, minf=59
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=0,22568,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+  WRITE: bw=2259MiB/s (2368MB/s), 2259MiB/s-2259MiB/s (2368MB/s-2368MB/s), io=44.2GiB (47.5GB), run=20039-20039msec
+
+#####
+y - Run 2
+2022-01-05 18:47:43
+#####
+test: (g=0): rw=randwrite, bs=(R) 2048KiB-2048KiB, (W) 2048KiB-2048KiB, (T) 2048KiB-2048KiB, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1043777: Wed Jan  5 18:47:41 2022
+  write: IOPS=1127, BW=2262MiB/s (2372MB/s)(44.3GiB/20045msec); 0 zone resets
+   bw (  MiB/s): min= 2152, max= 2356, per=99.95%, avg=2260.93, stdev=52.83, samples=40
+   iops        : min= 1076, max= 1178, avg=1130.45, stdev=26.39, samples=40
+  cpu          : usr=3.32%, sys=6.26%, ctx=19592, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=0,22608,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+  WRITE: bw=2262MiB/s (2372MB/s), 2262MiB/s-2262MiB/s (2372MB/s-2372MB/s), io=44.3GiB (47.5GB), run=20045-20045msec
+
+#####
+y - Run 3
+2022-01-05 18:48:16
+#####
+test: (g=0): rw=randwrite, bs=(R) 2048KiB-2048KiB, (W) 2048KiB-2048KiB, (T) 2048KiB-2048KiB, ioengine=libaio, iodepth=64
+fio-3.29
+Starting 1 process
+test: Laying out IO file (1 file / 1024MiB)
+
+test: (groupid=0, jobs=1): err= 0: pid=1114799: Wed Jan  5 18:48:16 2022
+  write: IOPS=1126, BW=2259MiB/s (2369MB/s)(44.2GiB/20041msec); 0 zone resets
+   bw (  MiB/s): min= 2164, max= 2348, per=99.93%, avg=2257.75, stdev=49.64, samples=40
+   iops        : min= 1082, max= 1174, avg=1128.85, stdev=24.79, samples=40
+  cpu          : usr=3.27%, sys=6.18%, ctx=19820, majf=0, minf=58
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=0,22577,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+  WRITE: bw=2259MiB/s (2369MB/s), 2259MiB/s-2259MiB/s (2369MB/s-2369MB/s), io=44.2GiB (47.5GB), run=20041-20041msec
+

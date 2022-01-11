@@ -1,0 +1,50 @@
+fs_mark-3.3/
+fs_mark-3.3/fs_mark.h
+fs_mark-3.3/plot_test
+fs_mark-3.3/lib_timing.c
+fs_mark-3.3/Makefile
+fs_mark-3.3/fs_mark.c
+fs_mark-3.3/README
+cc -O2 -Wall -D_FILE_OFFSET_BITS=64   -c -o fs_mark.o fs_mark.c
+cc -O2 -Wall -D_FILE_OFFSET_BITS=64   -c -o lib_timing.o lib_timing.c
+fs_mark.c: In function 'cleanup_exit':
+fs_mark.c:55:35: warning: '%d' directive writing between 1 and 11 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+   55 |  sprintf(child_log_file_name, "%s.%d", log_file_name, getpid());
+      |                                   ^~
+In file included from /usr/include/stdio.h:867,
+                 from fs_mark.c:36:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:10: note: '__builtin___sprintf_chk' output between 3 and 4108 bytes into a destination of size 4096
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:495,
+                 from fs_mark.c:40:
+In function 'strncpy',
+    inlined from 'process_args' at fs_mark.c:145:4:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 4096 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fs_mark.c: In function 'setup':
+fs_mark.c:463:36: warning: '%d' directive writing between 1 and 11 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+  463 |  sprintf(thread_log_file_name, "%s.%d", log_file_name, pid);
+      |                                    ^~
+In file included from /usr/include/stdio.h:867,
+                 from fs_mark.c:36:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:10: note: '__builtin___sprintf_chk' output between 3 and 4108 bytes into a destination of size 4096
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fs_mark.c: In function 'process_child_log_file':
+fs_mark.c:949:35: warning: '%d' directive writing between 1 and 11 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+  949 |  sprintf(child_log_file_name, "%s.%d", log_file_name, child_pid);
+      |                                   ^~
+In file included from /usr/include/stdio.h:867,
+                 from fs_mark.c:36:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:10: note: '__builtin___sprintf_chk' output between 3 and 4108 bytes into a destination of size 4096
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -o fs_mark fs_mark.o lib_timing.o

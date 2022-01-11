@@ -1,0 +1,312 @@
+#####
+y - Run 1
+2022-01-06 10:34:18
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:33:20 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2076.7           121844
+    48        40000      1048576       2081.8           126304
+    69        60000      1048576       2107.2           126774
+    91        80000      1048576       2100.8           122403
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 8192 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 12288 File exists
+fopen failed to open: fs_log.txt.4007455
+
+#####
+y - Run 2
+2022-01-06 10:35:36
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:34:20 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2153.7           119258
+    48        40000      1048576       2077.7           123542
+    69        60000      1048576       1233.9           125050
+    91        80000      1048576       1215.4           121947
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 8192 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fopen failed to open: fs_log.txt.4165284
+
+#####
+y - Run 3
+2022-01-06 10:36:45
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:35:38 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       1652.6           129433
+    48        40000      1048576       1763.5           132673
+    69        60000      1048576       1661.9           141658
+    91        80000      1048576       2064.2           124005
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 12288 File exists
+Error in creat: No space left on device
+fopen failed to open: fs_log.txt.124826
+
+#####
+y - Run 4
+2022-01-06 10:38:00
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:36:47 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       1497.6           133200
+    48        40000      1048576       2162.6           126577
+    69        60000      1048576       1325.8           135350
+    91        80000      1048576       1334.9           134083
+fs_mark: write_file write failed: 12288 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 8192 File exists
+fs_mark: write_file write failed: 4096 File exists
+fopen failed to open: fs_log.txt.295701
+
+#####
+y - Run 5
+2022-01-06 10:39:00
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:38:02 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2138.4           128810
+    48        40000      1048576       2095.4           126977
+    69        60000      1048576       2125.6           129842
+    91        80000      1048576       2090.8           127948
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 12288 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: -1 No space left on device
+fopen failed to open: fs_log.txt.424096
+
+#####
+y - Run 6
+2022-01-06 10:40:16
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:39:02 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       1357.4           140467
+    48        40000      1048576       1345.9           140325
+    69        60000      1048576       1395.4           132817
+    91        80000      1048576       2088.9           129486
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 12288 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: -1 No space left on device
+fopen failed to open: fs_log.txt.590057
+
+#####
+y - Run 7
+2022-01-06 10:41:28
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:40:18 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2074.0           122126
+    48        40000      1048576       1429.5           133235
+    69        60000      1048576       1273.5           137233
+    91        80000      1048576       1863.9           132646
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 4096 File exists
+fopen failed to open: fs_log.txt.747834
+
+#####
+y - Run 8
+2022-01-06 10:42:28
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:41:30 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2124.3           126136
+    48        40000      1048576       2110.6           124795
+    69        60000      1048576       2147.8           122080
+    91        80000      1048576       2114.7           127633
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 12288 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: -1 No space left on device
+fopen failed to open: fs_log.txt.876172
+
+#####
+y - Run 9
+2022-01-06 10:43:29
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:42:30 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2100.3           125515
+    48        40000      1048576       2078.6           129621
+    69        60000      1048576       2100.4           128158
+    91        80000      1048576       2061.3           132525
+fs_mark: write_file write failed: 8192 File exists
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 8192 File exists
+fopen failed to open: fs_log.txt.1007390
+
+#####
+y - Run 10
+2022-01-06 10:44:28
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:43:31 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2159.0           126059
+    48        40000      1048576       2121.7           124595
+    69        60000      1048576       2121.9           124528
+    91        80000      1048576       2162.1           123120
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 12288 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 4096 File exists
+fopen failed to open: fs_log.txt.1136169
+
+#####
+y - Run 11
+2022-01-06 10:45:28
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:44:30 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2072.5           125497
+    48        40000      1048576       2131.4           129539
+    69        60000      1048576       2105.5           129494
+    91        80000      1048576       2115.6           129449
+fs_mark: write_file write failed: 12288 File exists
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 8192 File exists
+fopen failed to open: fs_log.txt.1265656
+
+#####
+y - Run 12
+2022-01-06 10:46:28
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:45:30 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       2153.9           123364
+    48        40000      1048576       2065.4           127567
+    69        60000      1048576       2063.3           125344
+    91        80000      1048576       2053.1           126647
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: -1 No space left on device
+fopen failed to open: fs_log.txt.1394095
+
+#####
+y - Run 13
+2022-01-06 10:47:29
+#####
+
+#  ./fs_mark  -d  scratch  -L  5  -s  1048576  -n  5000  -t  4 
+#	Version 3.3, 4 thread(s) starting at Thu Jan  6 10:46:30 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    26        20000      1048576       1658.7           129548
+    48        40000      1048576       2181.5           126262
+    69        60000      1048576       2130.6           122878
+    91        80000      1048576       2112.6           123658
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 8192 File exists
+fs_mark: write_file write failed: 4096 File exists
+fs_mark: write_file write failed: 8192 File exists
+fopen failed to open: fs_log.txt.1528581
+

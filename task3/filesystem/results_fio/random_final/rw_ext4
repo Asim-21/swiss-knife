@@ -1,0 +1,4 @@
+4k,   WRITE: bw=1002MiB/s (1051MB/s), 249MiB/s-254MiB/s (261MB/s-266MB/s), io=29.4GiB (31.5GB), run=30001-30001msec
+64k,   WRITE: bw=1022MiB/s (1072MB/s), 254MiB/s-257MiB/s (267MB/s-270MB/s), io=29.9GiB (32.2GB), run=30001-30001msec
+256k,   WRITE: bw=1039MiB/s (1090MB/s), 258MiB/s-261MiB/s (271MB/s-274MB/s), io=30.5GiB (32.7GB), run=30001-30001msec
+2m   WRITE: bw=1017MiB/s (1066MB/s), 251MiB/s-259MiB/s (263MB/s-272MB/s), io=29.8GiB (32.0GB), run=30001-30001msec
