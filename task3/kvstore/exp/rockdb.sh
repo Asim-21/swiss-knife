@@ -14,7 +14,10 @@ password='123456'
 mkdir bonus_results/${n}
 rdb=${n}'/rocksdb'
 indb=${n}'/innodb'
+nix-env -iA nixos.sysbench
+
 git clone https://github.com/Percona-Lab/sysbench-tpcc.git
+cp default.nix sysbench-tpcc/
 #<< 'eof' 
 sudo docker pull mariadb:10.2
 sudo docker build -t myrocks .
@@ -54,3 +57,4 @@ cd ../
 echo "<-------> done! Results can been seen in bonus_results directory <------->"
 echo "cleaning..."
 docker rm -f teamf_myrocks;docker image rm myrocks
+sudo rm -rf sysbench-tpcc

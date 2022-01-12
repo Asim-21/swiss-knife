@@ -34,7 +34,7 @@ mem_db = load_df(f"{path2}")
 df = pd.DataFrame({'redis': r_db['latency'],
                    'redis_cluster': mem_db['latency'],
                    }, index=r_db.index)
-
+df = df.div(1000)
 ax = df.plot.line(rot=0, title= f'YCSB\nRedis vs Redis_Cluster\n({mode} latency, 64 threads) ({w})',
-                  ylabel='Latency (us)', xlabel='Throughput/sec (K)', x_compat=True)
+                  ylabel='Avg Latency (ms)', xlabel='Throughput/sec (K)', x_compat=True)
 ax.figure.savefig(f"../results/{direc}/Redis_RedisCluster_{mode}_{w}.png")
