@@ -3,5 +3,6 @@
 pkgs.mkShell {
   nativeBuildInputs = [
     pkgs.python3.pkgs.seaborn
+    pkgs.python3.pkgs.pytimeparse
   ];
 }

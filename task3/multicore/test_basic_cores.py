@@ -82,6 +82,7 @@ for i in range(len(cores_range)):
 plt.xticks(np.arange(app_num), labels=workload_map.keys(), fontsize=8)
 plt.legend()
 plt.axhline(y=1, color='r', linestyle='-')
-plt.savefig(f"results/phoenix_cores.png")
+plt.ylabel("Speedup")
+plt.savefig(f"multicore/results/phoenix_cores.png")
 exit(0)
 
