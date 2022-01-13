@@ -35,7 +35,8 @@ Having already mentioned the relevance of benchmarking we now want to focus on t
 
 #### Steps for deployment:
 
-Please add your steps here
+For a detailed description of the instructions and results please head over to the following Notion site. 
+https://adrianm.notion.site/Task-3-Network-Benchmarking-with-iPerf-Team-F-d67c238499744279b0d908b17ceb5166
 
 
 ### D - MultiCore
