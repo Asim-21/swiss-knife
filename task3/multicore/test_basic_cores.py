@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-FW_HOME = "/home/teamf/wenli_temp/phoenix/phoenix-2.0/"
-DATA_HOME = "/home/teamf/wenli_temp/"
+FW_HOME = "temp/phoenix/phoenix-2.0/"
+DATA_HOME = "temp/"
 
 my_env = os.environ.copy()
 my_env["MR_L1CACHESIZE"] = str(1024*1024*2)
@@ -84,6 +84,6 @@ plt.xticks(np.arange(app_num), labels=workload_map.keys(), fontsize=8)
 plt.legend()
 plt.axhline(y=1, color='r', linestyle='-')
 plt.ylabel("Speedup")
-plt.savefig(f"multicore/results/phoenix_cores.png")
+plt.savefig(f"results/phoenix_cores.png")
 exit(0)
 

@@ -9,8 +9,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-FW_HOME = "/home/teamf/wenli_temp/parsec-3.0"
-#DATA_HOME = "/home/teamf/wenli_temp/"
+FW_HOME = "temp/parsec-3.0"
 
 my_env = os.environ.copy()
 
@@ -75,6 +74,6 @@ plt.xticks(np.arange(app_num), labels=workload_map.keys(), fontsize=8)
 plt.legend()
 plt.axhline(y=1, color='r', linestyle='-')
 plt.ylabel("Speedup")
-plt.savefig(f"multicore/results/parsec_size.png")
+plt.savefig(f"results/parsec_size.png")
 
 exit(0)
