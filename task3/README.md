@@ -86,7 +86,7 @@ In figure 12, we can look into FS-mark benchmark results. It changed the number 
 ### C- Networking
 #### -- Basic Task
 ![image](https://user-images.githubusercontent.com/76809539/149411931-ba64f669-7853-4993-813f-de24517a087d.png)<br>
-In figure 13, we can look at the increment of datarates on both transfer and bitrate when running the TCP benchmark with different bandwiths. Figure 14 illustrates the jitter and dataframe amount differences. <b>
+In figure 13, we can look at the increment of datarates on both transfer and bitrate when running the TCP benchmark with different bandwiths. Figure 14 illustrates the jitter and dataframe amount differences. <br>
 ![image](https://user-images.githubusercontent.com/76809539/149412243-35c68de9-2af2-4b85-8874-406231997e64.png)<br>
 ![image](https://user-images.githubusercontent.com/76809539/149412218-ddeb2cce-d6a2-45cb-9b75-1dbb3b60f860.png)<br>
 The change in window size [Figure 15], whilst running under TCP, causes a first considerable change when going from 8K to 128K yet this change become neglectable as the window size grows - the cwmd keeps growing. <br>
