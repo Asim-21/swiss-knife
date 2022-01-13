@@ -77,7 +77,8 @@ x = x - (total_width - width) / 2
 for i in range(len(cores_range)):
     cores = cores_range[i]
     data = df[cores]
-    plt.bar(x + i*width, data,  width=width, label=f"{cores} Cores", ec='black')
+#    plt.bar(x + i*width, data,  width=width, label=f"{cores} Cores", ec='black')
+    plt.bar(x + i*width, data,  width=width, label=f"{cores} Cores")
 
 plt.xticks(np.arange(app_num), labels=workload_map.keys(), fontsize=8)
 plt.legend()

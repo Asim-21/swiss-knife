@@ -69,7 +69,7 @@ x = x - (total_width - width) / 2
 for i in range(len(size_range)):
     size = size_range[i]
     data = df[size]
-    plt.bar(x + i*width, data,  width=width, label=f"{size}", ec='black')
+    plt.bar(x + i*width, data,  width=width, label=f"{size}")
 
 plt.xticks(np.arange(app_num), labels=workload_map.keys(), fontsize=8)
 plt.legend()

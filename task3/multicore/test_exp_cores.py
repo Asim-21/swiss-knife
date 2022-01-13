@@ -66,7 +66,7 @@ x = x - (total_width - width) / 2
 for i in range(len(threads_range)):
     threads = threads_range[i]
     data = df[threads]
-    plt.bar(x + i*width, data,  width=width, label=f"{threads} Threads", ec='black')
+    plt.bar(x + i*width, data,  width=width, label=f"{threads} Threads")
 
 plt.xticks(np.arange(app_num), labels=workload_map.keys(), fontsize=8)
 plt.legend()
