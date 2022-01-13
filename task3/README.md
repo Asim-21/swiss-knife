@@ -99,27 +99,13 @@ When analyzing what happens when running the reverse mode, we get the following 
 ![image](https://user-images.githubusercontent.com/76809539/149412378-356e00a7-665b-4755-be27-1af96410ce12.png)<br>
 Lastly, Figure 18 displays the change in average transfer and bitrate while running with TCP (since there is no difference at all when applying parallel streams using UDP). <br>
 
-#### -- Bonus Task
-<br>
-<br>
-
-<br>
-<br>
-
 ### D - Multicore
 #### -- Basic Task
-<br>
-<br>
-<br>
-In figure 19, except kmeans, all the other workloads show a significant performance improvement. With the increasing of cores, the performances of the workloads histogram and string match increase accordingly, while the workloads linear regression and word count already reach their highest performance with 4 cores.
-In figure 20, the speedups of most workloads are higher with larger data size, but the workload linear regression gains the lowest speedup with medium data size.
-<br>
-  
-  
-  
-  #### -- Bonus Task
-<br>
-<br>
-As shown in Figure 21 and 22, all the workloads gain a speedup $(>1)$. Like the basic task, the performances are not always related to the number of threads or the size of data.
-We suspect that the performances do not always grow up with the number of cores, due to multiprocessing overhead.
-<br>
+![image](https://user-images.githubusercontent.com/76809539/149424361-0caa6d00-a372-40dd-b839-387b1348e51c.png)<br>
+In figure 19, except kmeans, all the other workloads show a significant performance improvement. With the increasing of cores, the performances of the workloads histogram and string match increase accordingly, while the workloads linear regression and word count already reach their highest performance with 4 cores.<br>
+![image](https://user-images.githubusercontent.com/76809539/149424468-6d4b20aa-78c2-461e-93d4-573721a09421.png)<br>
+In figure 20, the speedups of most workloads are higher with larger data size, but the workload linear regression gains the lowest speedup with medium data size.<br>  
+#### -- Bonus Task
+![image](https://user-images.githubusercontent.com/76809539/149424545-feba4d18-cb58-4390-b6e8-f28d4b245f7f.png)<br>
+![image](https://user-images.githubusercontent.com/76809539/149424589-94016f75-6995-4f9e-9bbd-0a49d4af2721.png)<br>
+As shown in Figure 21 and 22, all the workloads gain a speedup (> 1). Like the basic task, the performances are not always related to the number of threads or the size of data. We suspect that the performances do not always grow up with the number of cores, due to multiprocessing overhead.<br>
