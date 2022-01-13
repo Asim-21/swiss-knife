@@ -102,7 +102,7 @@ Lastly, Figure 18 displays the change in average transfer and bitrate while runn
 #### -- Bonus Task
 <br>
 <br>
-<br>
+
 <br>
 <br>
 
@@ -111,7 +111,8 @@ Lastly, Figure 18 displays the change in average transfer and bitrate while runn
 <br>
 <br>
 <br>
-<br>
+In figure 19, except kmeans, all the other workloads show a significant performance improvement. With the increasing of cores, the performances of the workloads histogram and string match increase accordingly, while the workloads linear regression and word count already reach their highest performance with 4 cores.
+In figure 20, the speedups of most workloads are higher with larger data size, but the workload linear regression gains the lowest speedup with medium data size.
 <br>
   
   
@@ -119,6 +120,6 @@ Lastly, Figure 18 displays the change in average transfer and bitrate while runn
   #### -- Bonus Task
 <br>
 <br>
-<br>
-<br>
+As shown in Figure 21 and 22, all the workloads gain a speedup $(>1)$. Like the basic task, the performances are not always related to the number of threads or the size of data.
+We suspect that the performances do not always grow up with the number of cores, due to multiprocessing overhead.
 <br>
