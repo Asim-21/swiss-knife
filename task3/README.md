@@ -30,9 +30,22 @@ In this section, we are going to benchmark 2 different filesystems i.e. EXT4 and
   <li>There are other script files like <code>partition.sh</code>, <code>wipe.sh</code> and <code>format.sh</code> which can be used if something goes wrong, the correct sequence is to run <code>wipe.sh</code> then <code>partition.sh</code> </li>
 </ul>
 
+### C - Networking
+Having already mentioned the relevance of benchmarking we now want to focus on the importance of network benchmarking. Benchmarking is at its core the comparison of processes under a certain criteria - most likely performance. Thus, network benchmarking enables us to have an overview of what is the performance of our explored network. Furthermore, it might provide us an insight of how our network compares to other similar ones. Logically, this is considered a good practice procedure since these measurements become more and more crucial as we approach a much more competent environment and as we get a glimpse at what should be the standard behavior. The former being more often the reason why network benchmarking has become a widely researched field. 
+
+#### Steps for deployment:
+
+Please add your steps here
 
 
+### D - MultiCore
 
+To improve the performance of processors, manufacturers have been releasing more multi-core machines. Having multiple cores, each core can handle a different thread simultaneously. In this section, we will dive into multi-core benchmarking, with two benchmark suites: Phoenix 2.0, PARSEC 3.0.
+Phoenix is a programming API based on Google's MapDeduce model. It parallelizes MapDeduce applications by 4 steps: dividing input data into chunks, parallelizing Map tasks, parallelizing Reduce tasks, and merging reduce queues into single queue. Phoenix also provides some sample applications. In the basic task, we use these applications of Phoenix 2.0 for multi-cores benchmarking. Later in the bonus task, we have tested with benchmark suite PAR-SEC 3.0
+
+#### Steps for deployment:
+
+Please add your steps here
 
 __________________________________________________________________________________________________________________________________________________________________
 ## Results
@@ -70,7 +83,38 @@ Figure 11 shows IOPS of ext4 with the same settings. IOPS surged up to 210k when
 <br>
 In figure 12, we can look into FS-mark benchmark results. It changed the number of threads from 1 to 4 and number of file/s rose to more than double than with 1 thread. <br>
 
+### C- Networking
+#### -- Basic Task
+![image](https://user-images.githubusercontent.com/76809539/149411931-ba64f669-7853-4993-813f-de24517a087d.png)<br>
+In figure 13, we can look at the increment of datarates on both transfer and bitrate when running the TCP benchmark with different bandwiths. Figure 14 illustrates the jitter and dataframe amount differences. <b>
+![image](https://user-images.githubusercontent.com/76809539/149412243-35c68de9-2af2-4b85-8874-406231997e64.png)<br>
+![image](https://user-images.githubusercontent.com/76809539/149412218-ddeb2cce-d6a2-45cb-9b75-1dbb3b60f860.png)<br>
+The change in window size [Figure 15], whilst running under TCP, causes a first considerable change when going from 8K to 128K yet this change become neglectable as the window size grows - the cwmd keeps growing. <br>
+![image](https://user-images.githubusercontent.com/76809539/149412317-58c57fb9-a6b4-4051-a9a0-99c58df9d49e.png)<br>
+When analyzing what happens when running the reverse mode, we get the following illustration from Figure 16 and 17. Here we divided the graphs between the "default" and reverse mode from TCP and UDP accordingly. <br>
+![image](https://user-images.githubusercontent.com/76809539/149412378-356e00a7-665b-4755-be27-1af96410ce12.png)<br>
+Lastly, Figure 18 displays the change in average transfer and bitrate while running with TCP (since there is no difference at all when applying parallel streams using UDP). <br>
 
+#### -- Bonus Task
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
-
+### D - Multicore
+#### -- Basic Task
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+  
+  
+  #### -- Bonus Task
+<br>
+<br>
+<br>
+<br>
+<br>
