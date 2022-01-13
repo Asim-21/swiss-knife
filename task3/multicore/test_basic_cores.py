@@ -25,7 +25,7 @@ def run_workload(cores, app, param, seq = False):
 
 #    print(stderr)
     times = stderr.split()
-    total_time = float(times[-1])+float(times[-3])+float(times[-5])
+    total_time = float(times[-5])
     print("time", total_time)
     return total_time
 

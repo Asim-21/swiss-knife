@@ -26,7 +26,7 @@ def run_workload(threads, app, data_size):
 #    print(stdout)
     pattern = "real\t.+\nuser\t.+\nsys\t.+\n"
     times = re.search(pattern, stdout.decode('ascii')).group(0).split()
-    total_time = timeparse(times[-1])+timeparse(times[-3])+timeparse(times[-5])
+    total_time = timeparse(times[-5])
     print("time", total_time)
     return total_time
 
