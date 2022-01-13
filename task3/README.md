@@ -46,7 +46,10 @@ Phoenix is a programming API based on Google's MapDeduce model. It parallelizes 
 
 #### Steps for deployment:
 
-Please add your steps here
+<ul>
+  <li>Run script file <code>run_multicore_basic.sh</code>  in <code>task3/multicore</code> directory. It will run for basic task and create output files in <code>task3/multicore/results</code> directory.</li>
+  <li>Run script file <code>run_multicore_exp.sh</code>  in <code>task3/multicore</code> directory. It will run for exploration task and create output files in <code>task3/multicore/results</code> directory.</li>
+</ul>
 
 __________________________________________________________________________________________________________________________________________________________________
 ## Results
