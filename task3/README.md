@@ -12,7 +12,7 @@ on MYSQL have been used in the experiment.
 
 
 ## Please note this project has been run and tested on Ryan server provided by TUM.
-#### Steps for deployment:
+#### Steps for deployment: (script will prompt to enter results version e.g. v1, v2,v3)
 <ul>
   <li>Run script file <code>kvstore.sh</code>  in <code>task3/kvstore</code> directory. (script will prompt for an user input for "result-version"). It will run both basic task and exploration task.</li>
   <li>It can also be run seperately. For basic task, run script file <code>ycsb.sh</code>  in <code>task3/kvstore/basic</code> directory and for exploration task, run script file <code>rockdb.sh</code> in <code>task3/kvstore/exp</code> directory.</li>
@@ -22,7 +22,7 @@ on MYSQL have been used in the experiment.
 ### B- Filesystem
 In this section, we are going to benchmark 2 different filesystems i.e. EXT4 and BTRFS. There are many differences between these 2 file systems. Major difference is that Ext4 is a journaling file and Btrfs is a modern copy-on-write(CoW) with some additional advanced features. Btrfs also provides a built-in RAID support whereas Ext4 needs to use a 3rd party manager for logical volumes. Btrfs is space efficient and provides filesystem level deduplication that means it removes duplicate copies of data. Btrf also provides snapshots, extensive checksums, scrubbing, self-healing data, and many more useful improvements to ensure data integrity.
 
-#### Steps for deployment:
+#### Steps for deployment: (script will prompt to enter results version e.g. v1, v2,v3)
 <ul>
   <li>Run script file <code>filesystem.sh</code>  in <code>task3/filesystem</code> directory. (script will prompt for an user input for "result-version"). It will run both basic task and exploration task.</li>
   <li>It can also be run seperately. For basic task, run script file <code>fio.sh</code> in <code>task3/filesystem</code> directory and for exploration task, run script file <code>phoronix.sh</code> in <code>task3/filesystem</code> directory.</li>
