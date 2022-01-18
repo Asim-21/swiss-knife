@@ -16,4 +16,6 @@ sudo docker rm -f pts
 #wipe
 . ./wipe.sh
 
-
+echo "----------------------------------------------------------------------------------------"
+echo "Please copy the URL above to see the results or check the mentioned details on README.md"
+echo "----------------------------------------------------------------------------------------"
