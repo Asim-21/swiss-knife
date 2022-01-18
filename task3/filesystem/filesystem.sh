@@ -1,4 +1,4 @@
-. ./variables
+. ./variables.sh
 sudo rm -rf ${mount_ext4}
 sudo rm -rf ${mount_btrfs}
 mkdir ${mount_ext4}
