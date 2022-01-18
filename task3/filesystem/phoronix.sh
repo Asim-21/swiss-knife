@@ -7,7 +7,7 @@ docker run --name pts \
 docker exec -it pts /bin/bash \
     -c "cd phoronix-test-suite/;./phoronix-test-suite install disk;yes | ./phoronix-test-suite run disk SKIP_TESTS=pts/compilebench-1.0.3,pts/dbench-1.0.2,pts/ior-1.1.1,pts/iozone-1.9.6,pts/postmark-1.1.2"
 
-sudo chown -R "$(whoami)":users ~/swiss-knife
+sudo chown -R "$(whoami)":users "$(pwd)"
 mkdir ${phoronix}
 cp -R ${mount_ext4}'/test-results/y/.' ${phoronix}
 
