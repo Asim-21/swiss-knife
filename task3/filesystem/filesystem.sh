@@ -3,7 +3,7 @@ sudo rm -rf ${mount_ext4}
 sudo rm -rf ${mount_btrfs}
 mkdir ${mount_ext4}
 mkdir ${mount_btrfs}
-echo '<--------------------> Starting partitioning and creating ext4 and btrfs fs <-------------------->'
+echo '<--------------------> Formatting Partitions with ext4 and btrfs fs <-------------------->'
 . ./format.sh
 echo '<--------------------> Running fio on ext4 and btrfs fs <-------------------->'
 . ./fio.sh
