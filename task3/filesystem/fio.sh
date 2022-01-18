@@ -46,11 +46,16 @@ echo "Seqwrite $(sudo fio ${seqwrite} --directory=${mount_btrfs} --iodepth=${io_
 echo -e "\n" | sh format.sh > /dev/null
 
 echo '<---------------------> Plotting <--------------------->'
-python3 plot_fio_bs.py -p ${bs_ext4_file} -g ${bs_btrfs_file} -n ${random}
-python3 plot_fio_iodepth.py -p ${io_depth_ext4_file} -g ${io_depth_btrfs_file} -n ${random}
-python3 plot_fio_rw.py -p  ${rw_ext4_file} -g ${rw_btrfs_file} -n ${random}
-python3 plot_fio_bs_seq.py -p ${bs_ext4_seq} -g ${bs_btrfs_seq} -n ${sequential}
-python3 plot_fio_seq_write.py -p ${rw_ext4_seq} -g ${rw_btrfs_seq} -n ${sequential}
-python3 plot_fio_bs_directzero.py -p ${bs_ext4_fileIOdirectzero} -g ${bs_btrfs_fileIOdirectzero} -n ${random}
+nix-shell --run "python3 plot_fio_bs.py -p ${bs_ext4_file} -g ${bs_btrfs_file} -n ${random}"
+nix-shell --run "python3 plot_fio_iodepth.py -p ${io_depth_ext4_file} -g ${io_depth_btrfs_file} -n ${random}"
+nix-shell --run "python3 plot_fio_rw.py -p  ${rw_ext4_file} -g ${rw_btrfs_file} -n ${random}"
+nix-shell --run "python3 plot_fio_bs_seq.py -p ${bs_ext4_seq} -g ${bs_btrfs_seq} -n ${sequential}"
+nix-shell --run "python3 plot_fio_seq_write.py -p ${rw_ext4_seq} -g ${rw_btrfs_seq} -n ${sequential}"
+nix-shell --run "python3 plot_fio_bs_directzero.py -p ${bs_ext4_fileIOdirectzero} -g ${bs_btrfs_fileIOdirectzero} -n ${random}"
+
+
+
+
+
 
 
