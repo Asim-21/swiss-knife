@@ -26,7 +26,7 @@ In this section, we are going to benchmark 2 different filesystems i.e. EXT4 and
 <ul>
   <li>Run script file <code>filesystem.sh</code>  in <code>task3/filesystem</code> directory. (script will prompt for an user input for "result-version"). It will run both basic task and exploration task.</li>
   <li>It can also be run seperately. For basic task, run script file <code>fio.sh</code> in <code>task3/filesystem</code> directory and for exploration task, run script file <code>phoronix.sh</code> in <code>task3/filesystem</code> directory.</li>
-  <li>Results directories for basic tasks are <code>task3/filesystem/results_fio/random_"result-version"</code> and <code>task3/filesystem/results_fio/sequential_"result-version"</code>and and for exploration task in <code>task3/kvstore/exp/bonus_results/Disk-benchmarking_"result-version" OR copy the URL when it finishes for online results on openbenchmarking</code></li>
+  <li>Results directories for basic tasks are <code>task3/filesystem/results_fio/random_"result-version"</code> and <code>task3/filesystem/results_fio/sequential_"result-version"</code>and and for exploration task in <code>task3/kvstore/exp/bonus_results/Disk-benchmarking_"result-version"</code> OR copy the URL when it finishes for online results on openbenchmarking</li>
 </ul>
 
 ### C - Networking
