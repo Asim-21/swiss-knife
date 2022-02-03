@@ -1,10 +1,10 @@
-rm -rf temp_reproduction/
+rm -rf reproduction/
 
 SWISS_WORKSPACE=`pwd`
 echo $SWISS_WORKSPACE
 
-mkdir -p temp_reproduction
-cd temp_reproduction
+mkdir -p reproduction
+cd reproduction
 mkdir -p result2.1
 mkdir -p result2.2
 
