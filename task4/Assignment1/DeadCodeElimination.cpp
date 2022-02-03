@@ -24,7 +24,7 @@ void DeadCodeEliminationPass::removeDeadInstructions(Function &F) {
 
   // get all alive instructions
   for (Instruction &I: instructions(F)) {
-    if (I.isDebugOrPseudoInst() || !I.isSafeToRemove()) {
+    if (!I.isSafeToRemove()) {
       aliveSet.insert(&I);
       tempSet.push_back(&I);
     }

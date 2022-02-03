@@ -101,7 +101,6 @@ namespace {
 	if (checkedSet.count(Ptr)) {
 		return false;
 	}
-	errs() << Ptr << "-------------------";
 	checkedSet.insert(Ptr);
         
         /*  Create a function prototype (__runtime_checkbound)  */
