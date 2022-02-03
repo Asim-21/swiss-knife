@@ -1,0 +1,17 @@
+g++ -ggdb3 -Wall -fno-rtti -fPIC -shared -I/nix/store/2c2801fb94pxarv16dgl2bjjn2a76w87-llvm-12.0.1-dev/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -L/nix/store/jlxgax4621vzf5cfcgrcr295yakh5szd-llvm-12.0.1-lib/lib  boundschecker_pass.cpp -o SwissBoundsChecker.so
+rm -f ./tests/obj//main.o ./tests/obj//src1.o ./tests/obj//src2.o mytest
+clang -flto -Xclang -load -Xclang ./llvmpasses/SwissBoundsChecker.so  -lm -Xlinker ./runtime_lib//obj/runtime.o ./tests//main.c ./tests//src1.c ./tests//src2.c -o mytest 
+-- Compiling tests//main.c complete
+> assign_malloc. 0: 0
+> assign_malloc. 1: 10
+> assign_malloc. 2: 20
+> assign_malloc. 3: 30
+> assign_malloc. 4: 40
+>>>>>>>>>> Out-of-bounds error: 0x11507302b4 
+> assign_malloc. 5: 50
+> main -- alloc[3]: 30
+> main -- alloc[4]: 40
+>>>>>>>>>> Out-of-bounds error: 0x11507302b4 
+> main-- alloc[5]: 50 <--- buffer overflow
+>>>>>>>>>> Out-of-bounds error: 0x11507302f8 
+> main-- alloc+22: 4113 <--- buffer overflow
