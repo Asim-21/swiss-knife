@@ -6,6 +6,7 @@
 <ul>
   <li>Please follow the steps in https://github.com/TUM-DSE/Swiss-Knife-LLVM-Assignments/tree/main/Assignment1 (You must be familiar with the steps as us :) ).</li>
   <li>Our implementation of <code>DeadCodeElimination.cpp</code> and <code>DeadCodeElimination.h</code> are in <code>task4/Assignment1</code> directory.</li>
+  <li>To check the result of DeadCodeElimination, run<code>opt -S -passes=dead-code-elimination-pass FunctionWithDeadCode.ll</code>.</li>
 </ul>
 
 #### Steps for Assignment2.1 and Assignment2.2 reproduction:
